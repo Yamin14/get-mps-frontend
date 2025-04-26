@@ -1,0 +1,21 @@
+{
+  "name": "dynamic-table",
+  "version": "1.0.0",
+  "main": "DynamicTable.tsx",
+  "license": "MIT",
+  "types": "DynamicTable.d.ts",
+  "description": "A responsive React table component with sorting, filtering, pagination, and CSV export.",
+  "keywords": [
+    "react",
+    "table",
+    "typescript",
+    "responsive",
+    "data grid",
+    "component"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
+  
+}

@@ -1,0 +1,161 @@
+/* colors */
+:root {
+    --text-color-head: #fff;
+    --text-color-body: #333;
+    --border-color: #ddd;
+    --thead-background-color: #303030;
+    --tbody-background-color-primary: #fff;
+    --tbody-background-color-secondary: #f9f9f9;
+    --hover-color-head: #555;
+    --hover-color-body: #f1f1f1;
+}
+
+/* container */
+#dynamic-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* table controls */
+#table-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* filter */
+#filter {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* sort */
+#sort, #sortOrder {
+    padding: 2px 5px;
+    outline: none;
+}
+
+#sort-reset {
+    background-color: var(--thead-background-color);
+    color: var(--text-color-head);
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* pagination */
+.pagination-button {
+    background-color: var(--thead-background-color);
+    color: var(--text-color-head);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.pagination-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* download */
+#download {
+    background-color: var(--thead-background-color);
+    color: var(--text-color-head);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* table wrapper */
+#table-wrapper {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+/* table */
+table {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: 3px solid var(--border-color);
+    border-collapse: collapse;
+}
+
+/* table head */
+thead {
+    background-color: var(--thead-background-color);
+    color: var(--text-color-head);
+}
+
+thead th {
+    padding: 6px;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* hover */
+thead th:hover {
+    background-color: var(--hover-color-head);
+}
+
+/* table body */
+tbody {
+    background-color: var(--tbody-background-color-primary);
+    color: var(--text-color-body);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--tbody-background-color-secondary);
+}
+
+/* cell */
+tbody td {
+    padding: 6px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* hover */
+tbody tr:hover {
+    background-color: var(--hover-color-body);
+}
+
+/* tablet screens */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+    }
+}
+
+/* full size screens */
+@media screen and (min-width: 768px) {
+    table {
+        font-size: 16px;
+    }   
+}
