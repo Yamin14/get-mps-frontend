@@ -22,7 +22,7 @@ function App() {
 
     try {
       setLoading(true)
-      const response = await axios.post('http://localhost:5000/get_stock_data',
+      const response = await axios.post('https://get-mps-backend.vercel.app/get_stock_data',
         {
           ticker,
           start_date: startDate,
